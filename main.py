@@ -1,4 +1,5 @@
 # Valorant afk deathmatch farmer
+# author: https://github.com/michalani
 # version 1.3
 # screen 1920x1080
 # windowed mode (alt+enter)
