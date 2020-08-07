@@ -13,5 +13,5 @@ xp = 4.5k per hour on deathmatch (can be used on other game modes however it's u
 6. $$$
 # Is it undetectable?
 yes as of 07/08/2020
-# Script in action
+# Script in action (video)
 [![](http://img.youtube.com/vi/r0JXnD8xY_w/0.jpg)](http://www.youtube.com/watch?v=r0JXnD8xY_w "")
