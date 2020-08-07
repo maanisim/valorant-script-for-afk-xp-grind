@@ -12,3 +12,5 @@ xp = 4.5k per hour on deathmatch (can be used on other game modes however it's u
 4. run the script
 5. open valorant
 6. $$$
+# Is it undetectable?
+yes as of 07/08/2020
