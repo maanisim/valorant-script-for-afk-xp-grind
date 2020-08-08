@@ -20,7 +20,7 @@ def first_start(is_start):
         pyautogui.click(945, 950)
 
 def save_screenshot(name,x,y,height,width):
-    pyautogui.screenshot(region=(1817,1011,38,18)).save(name)
+    pyautogui.screenshot(region=(x,y,height,width)).save(name)
     
 #compares two pictures using dominant colors to decide whether they are the same picture
 def dominant_color_comparison(img,img2):
