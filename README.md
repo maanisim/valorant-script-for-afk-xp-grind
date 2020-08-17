@@ -4,13 +4,12 @@ screen 1920x1080\
 windowed mode (alt+enter)\
 xp = 4.5k per hour on deathmatch (can be used on other game modes however it's undetectable on deathmatch due to low chance of getting reported)
 
-
+Compiled version https://anonymousfiles.io/hloAEtgD/
 # How to install?
-1. Install python3
-2. `pip install -r requirements.txt `
-3. set the valorant to windowed mode (alt+enter)
-4. close valorant
-5. run the script
+1. Open valorant
+2. Set the valorant to windowed mode (alt+enter)
+3. Close valorant
+5. Run the vaL_deatchmatch exe
 6. $$$
 
 # How to run script?
