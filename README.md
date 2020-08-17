@@ -26,5 +26,6 @@ yes as of 07/08/2020
 ## version 1.4
 * in-game error detection and  relaunch capability added
 * auto valorant startup (no need for tedious setups)
+* less conspicuous anti-afk
 ## version 1.3
 * public release
