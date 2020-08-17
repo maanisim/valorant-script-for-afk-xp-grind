@@ -14,6 +14,7 @@ yes as of 07/08/2020
 # Script in action (video)
 [![](http://img.youtube.com/vi/r0JXnD8xY_w/0.jpg)](http://www.youtube.com/watch?v=r0JXnD8xY_w "")
 # Noticable Changes
+## version 1.4
 * in-game error detection and  relaunch capability added
 * auto valorant startup (no need for tedious setups)
 ## version 1.3
