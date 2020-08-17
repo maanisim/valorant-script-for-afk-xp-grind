@@ -4,7 +4,8 @@ screen 1920x1080\
 windowed mode (alt+enter)\
 xp = 4.5k per hour on deathmatch (can be used on other game modes however it's undetectable on deathmatch due to low chance of getting reported)
 
-Compiled version https://anonymousfiles.io/hloAEtgD/
+Compiled version https://anonymousfiles.io/hloAEtgD/ \
+Compiled version (backup): https://github.com/michalani/valorant-script-for-afk-xp-grind/releases/download/1.4/val_deathmatch_v1-4.exe
 # How to install?
 1. Open valorant
 2. Set the valorant to windowed mode (alt+enter)
