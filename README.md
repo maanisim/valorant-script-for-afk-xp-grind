@@ -5,10 +5,14 @@ windowed mode (alt+enter)\
 xp = 4.5k per hour on deathmatch (can be used on other game modes however it's undetectable on deathmatch due to low chance of getting reported)
 
 # How to use?
+`python3 main.py`
+# How to install?
 1. Install python3
 2. `pip install -r requirements.txt `
-3. run the script
-4. $$$
+3. set the valorant to windowed mode (alt+enter)
+4. close valorant
+5. run the script
+6. $$$
 
 # Is it undetectable?
 yes as of 07/08/2020
