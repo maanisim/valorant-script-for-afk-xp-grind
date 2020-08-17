@@ -14,7 +14,7 @@ import cv2
 launch_valorant = True
 script_refresh_rate = 5
 first_start_boolean = True
-time_to_launch_valorant = 90
+time_to_launch_valorant = 90 #increase this if you have any problems. 
 valorant_location = '"C:\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live'
 gamemode = 3
 '''
