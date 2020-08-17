@@ -3,7 +3,7 @@
 # version 1.4
 # screen 1920x1080
 # windowed mode (alt+enter)
-# xp = 4.5k per hour on deathmatch (can be used on other game modes however it's undetectable on deathmatch due to low chance of getting reported)
+# xp = 4.5k per hour on deathmatch (can be used on other game modes (if modified correctly) however it's undetectable on deathmatch due to low chance of getting reported)
 
 import pyautogui
 import time
