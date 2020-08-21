@@ -16,23 +16,25 @@ script_refresh_rate = 5
 first_start_boolean = True
 time_to_launch_valorant = 90 #increase this if you have any problems. 
 valorant_location = '"C:\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live'
-gamemode = 3
+gamemode = 3 #additional game modes are not implemented!
 '''
 0 = unrated
 1 = comp
 2 = spike rush
 3 = deathmatch
 '''
-
+# Mouse click at x,y cordinates
 def click(x,y):
     print("clicked ("+str(x)+","+str(y)+")")
     pyautogui.moveTo(x, y, 2, pyautogui.easeInOutQuad)
     pyautogui.click(x, y)
     time.sleep(2)
 
+# Select which game mode will be played
 def select_mode(mode):
     click(610+(160*mode), 120)
-    
+
+# As queuing for the first time takes more buttons it has it's own function   
 def queue_up_for_first_time(is_start):
     if(is_start == True):
         print("queuing up for gamemode: "+str(gamemode))
@@ -41,11 +43,11 @@ def queue_up_for_first_time(is_start):
         select_mode(gamemode)
         click(945,950)
         first_start_boolean = False
-
+# takes a pic (used in order to determine current location in valorant (are we playing? are we in mainscreen?)
 def save_screenshot(name,x,y,height,width):
     print("saving screenshot: "+name)
     pyautogui.screenshot(region=(x,y,height,width)).save(name)
-    
+
 #compares two pictures using dominant colors to decide whether they are the same picture
 def dominant_color_comparison(stored_color,img):
     print("comparing: "+img)
@@ -61,7 +63,8 @@ def press_W(sec):
     while time.time() < t_end:
         pyautogui.keyDown('w')
     pyautogui.keyUp('w')
-    
+
+# detects game disconections and black screens    
 def is_error():
     col_error = (255, 84, 84)
     if(pyautogui.screenshot().getpixel((1111, 394)) == col_error):
@@ -79,7 +82,7 @@ def is_error():
                 launch_game()
                 print("Connection Error detected!")
 
-
+# Launches the game for the first time, can be used to restart the game as it kills game first.
 def launch_game():
     print("launching valorant")
     pyautogui.hotkey('win','r')
