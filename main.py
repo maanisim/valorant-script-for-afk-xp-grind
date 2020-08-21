@@ -82,7 +82,7 @@ def is_error():
 
 def launch_game():
     print("launching valorant")
-    pyautogui.hotkey('winleft','r')
+    pyautogui.hotkey('win','r')
     time.sleep(2)
     pyautogui.write('cmd', interval=0.001)
     pyautogui.press('enter')
@@ -96,7 +96,7 @@ def launch_game():
     pyautogui.write("exit")
     pyautogui.press('enter')
     time.sleep(time_to_launch_valorant)
-    pyautogui.hotkey('winleft','up')
+    pyautogui.hotkey('win','up')
 
 def main():
     if(launch_valorant == True):
