@@ -16,7 +16,7 @@ script_refresh_rate = 5
 first_start_boolean = True
 time_to_launch_valorant = 90 #increase this if you have any problems. 
 valorant_location = '"C:\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live'
-gamemode = 3 #additional game modes are not implemented!
+gamemode = 3 #only gamemode 3 is supported!!!!!!!!!!!!!!!
 '''
 0 = unrated
 1 = comp
