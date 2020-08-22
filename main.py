@@ -10,19 +10,17 @@ import time
 from colorthief import ColorThief
 import cv2
 
-#settings
-launch_valorant = True
+# Settings (changable)
+launch_valorant = True # if valorant is already started simply set to False and go to valorant.
+time_to_launch_valorant = 90 # increase this if you have any problems of script starting before the game launches
+valorant_location = '"C:\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live'
+
+# [DONT CHANGE OR RISK BREAKEAGE]
+gamemode = 3 # DO NOT CHANGE!
 script_refresh_rate = 5
 first_start_boolean = True
-time_to_launch_valorant = 90 #increase this if you have any problems. 
-valorant_location = '"C:\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live'
-gamemode = 3 #only gamemode 3 is supported!!!!!!!!!!!!!!!
-'''
-0 = unrated
-1 = comp
-2 = spike rush
-3 = deathmatch
-'''
+
+
 # Mouse click at x,y cordinates
 def click(x,y):
     print("clicked ("+str(x)+","+str(y)+")")
@@ -43,12 +41,12 @@ def queue_up_for_first_time(is_start):
         select_mode(gamemode)
         click(945,950)
         first_start_boolean = False
-# takes a pic (used in order to determine current location in valorant (are we playing? are we in mainscreen?)
+# Takes a pic (used in order to determine current location in valorant (are we playing? are we in mainscreen?)
 def save_screenshot(name,x,y,height,width):
     print("saving screenshot: "+name)
     pyautogui.screenshot(region=(x,y,height,width)).save(name)
 
-#compares two pictures using dominant colors to decide whether they are the same picture
+# Compares two pictures using dominant colors to decide whether they are the same picture
 def dominant_color_comparison(stored_color,img):
     print("comparing: "+img)
     if(stored_color == ColorThief(img).get_color(quality=1)):
@@ -56,7 +54,7 @@ def dominant_color_comparison(stored_color,img):
     else:
         return False
 
-# anti afk
+# Anti afk
 def press_W(sec):
     t_end = time.time() + sec
     #press w for 0.2seconds
@@ -64,7 +62,7 @@ def press_W(sec):
         pyautogui.keyDown('w')
     pyautogui.keyUp('w')
 
-# detects game disconections and black screens    
+# Detects game disconections and black screens    
 def is_error():
     col_error = (255, 84, 84)
     if(pyautogui.screenshot().getpixel((1111, 394)) == col_error):
