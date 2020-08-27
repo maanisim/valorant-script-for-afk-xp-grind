@@ -1,6 +1,6 @@
 # Valorant afk deathmatch farmer
 # author: https://github.com/michalani
-# version 1.4
+# version 1.5
 # screen 1920x1080
 # windowed mode (alt+enter)
 # xp = 4.5k per hour on deathmatch (can be used on other game modes (if modified correctly) however it's undetectable on deathmatch due to low chance of getting reported)
@@ -19,7 +19,7 @@ valorant_location = '"C:\Riot Games\Riot Client\RiotClientServices.exe" --launch
 gamemode = 3 # DO NOT CHANGE!
 script_refresh_rate = 5
 first_start_boolean = True
-
+is_in_queue = False
 
 # Mouse click at x,y cordinates
 def click(x,y):
@@ -108,14 +108,19 @@ def main():
     while True:
         save_screenshot("black_square2.png",1817,1011,38,18)
         save_screenshot("top_black_square2.png",1816,125,18,28)
-                
         if(dominant_color_comparison((44, 52, 60),'black_square2.png') == True): #1st color check
             time.sleep(5.5) #delay due to broken MVP bug.
             
             if(dominant_color_comparison((44, 52, 60),'top_black_square2.png')): #2nd color check
-                click(931,990) #location of press again in valorant
-                press_W(0.2)
-                time.sleep(8)
+                if(is_in_queue == True):
+                    time.sleep(10)
+                else:
+                    click(931,990) #location of press again in valorant
+                    press_W(0.2)
+                    time.sleep(8)
+                    is_in_queue = True
+        else:
+            is_in_queue = False
         
         time.sleep(script_refresh_rate)
         press_W(0.2)
