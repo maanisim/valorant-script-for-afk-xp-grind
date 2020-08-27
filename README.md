@@ -23,6 +23,8 @@ yes as of 07/08/2020
 [![](http://img.youtube.com/vi/r0JXnD8xY_w/0.jpg)](http://www.youtube.com/watch?v=r0JXnD8xY_w "")
 
 # Noticable Changes
+## version 1.5
+* queue issues resolved
 ## version 1.4
 * in-game error detection and  relaunch capability added
 * auto valorant startup (no need for tedious setups)
