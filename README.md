@@ -1,3 +1,10 @@
+
+# This has been patched, use at your own risk
+1. Exploitative methods of XP farming will be treated seriously by as RIOT "won't show mercy next time". They have mentioned that one punishment will be "Permanent Suspension" which is essentially a permanent account ban and a 3 month HWID ban.
+
+2. Future XP farming scripts/bots will now be treated as a third-party tool and on the same level as cheating. You will be perma-banned if found botting, alongside being HWID banned. The only way to circumvent a HWID ban is to buy a new PC or wait 90 days to get unbanned. 
+If anyone ever does think of possibly using a spoofer, you're out of luck. All previous methods are now patched (there were only like 2 methods in the entire existence of the game lol), and Vanguard boots up when you see the BIOS screen, so it just isn't going to happen.
+
 # Valorant afk deathmatch farmer
 author: https://github.com/michalani \
 screen 1920x1080\
@@ -17,7 +24,7 @@ Compiled version 1.4: https://github.com/michalani/valorant-script-for-afk-xp-gr
 `python3 main.py`
 
 # Is it undetectable?
-yes as of 07/08/2020
+Not anymore!
 
 # Script in action (video)
 [![](http://img.youtube.com/vi/r0JXnD8xY_w/0.jpg)](http://www.youtube.com/watch?v=r0JXnD8xY_w "")
